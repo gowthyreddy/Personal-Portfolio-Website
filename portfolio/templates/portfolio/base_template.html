@@ -1,0 +1,99 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="{% static "portfolio/custom.css" %}">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="{% static "portfolio/Logo.png" %}">
+
+  <title>Gowtham Reddy</title>
+
+</head>
+
+<body>
+
+  <nav id="topNav" class="navbar navbar-expand-md navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="{% static "portfolio/Logo.png" %}" width="30" height="30" class="d-inline-block align-top" alt="Gowtham's Logo">
+        <span>Gowtham Reddy</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+          <a class= "nav-link" href="mailto:gowtham.rdy2001@gmail.com" class="mail" target="_blank">Email</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% static "portfolio/resume.pdf" %}">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/gowtham-sanjamala-ba986b1a7/" target="_blank">LinkedIn</a>
+          </li>
+          &nbsp;
+             &nbsp;
+
+          <li>
+            <a role="button" href="{% url 'blog:all_blogs' %}" class="btn btn-primary">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+</div>
+
+  <div class="container">
+    {% block content %}{% endblock %}
+  </div>
+  <br>
+  <br>
+
+
+ <header class='masthead'>
+    <h1 class='masthead-heading'>About Me!!</h1>
+</header>
+<section class="introduction-section">
+    <h1>Introduction</h1>
+    <p> Hi! I am Gowtham Reddy and I'm 20 years old. I'm pursuing my BTech in <mark>Information Science and Engineering</mark> from <mark>University Visvesvarya College of Engineering</mark></p>
+    <p>I love the internet, technology, movies, and building beautiful things.</p>
+</section>
+<section class="location-section">
+    <h1>Where I'm From</h1>
+    <p>I'm from <mark>Bengaluru</mark>, Karnataka. </p>
+</section>
+<section class="questions-section">
+    <h1>More About Me</h1>
+    <h2>My favorite hobbies</h2>
+    <p> Designing web pages, getting to know new technologies, competitive programming, and travelling.</p>
+    <h2>My favourite quote</h2>
+    <p style="font-family:courier;"> <i>Failure is not falling down, It's not getting up!</i></p>
+    <h2>I'm good at</h2>
+    <p>Writing, rapping, and public speaking.</p>
+     <h2>What other's like about me. </h2>
+    <p> My sense of humour and how I break the ice when I am speaking to a total stranger. Other's also admire my <mark>communication skills</mark> and <mark>negotiation skills</mark>. </p>
+
+
+</section>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
